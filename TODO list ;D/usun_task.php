@@ -7,6 +7,8 @@
         die("Connection failed: " . $mysqli->connect_error);
     }
 
+    $id = $_GET['id'];
+
     $query = "DELETE FROM tasks WHERE id = ?";
     $stmt = $mysqli->prepare($query);
     $stmt->bind_param("i", $id);

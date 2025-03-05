@@ -5,7 +5,7 @@
         die("Connection failed: " . $mysqli->connect_error);
     }
 
-    $query = "SELECT * FROM tasks";
+    $query = "SELECT * FROM tasks ORDER BY created_at DESC";
     $result = $mysqli->query($query);
 
     $tasks = [];

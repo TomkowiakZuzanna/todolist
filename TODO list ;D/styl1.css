@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff;
     margin: 0;
     padding: 20px;
 }
@@ -43,4 +43,35 @@ button:hover {
 
 #tasksList {
     margin-top: 20px;
+}
+
+.task {
+    background: #fff;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    max-width: 400px;
+}
+
+.task h4 {
+    margin-top: 10px;
+}
+
+.task input {
+    width: 80%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+ #editFormContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    width: 300px;
 }
